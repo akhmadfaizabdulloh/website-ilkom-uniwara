@@ -571,12 +571,20 @@ video {
   top: 100%;
 }
 
+.-bottom-20 {
+  bottom: -5rem;
+}
+
 .z-10 {
   z-index: 10;
 }
 
 .z-50 {
   z-index: 50;
+}
+
+.-z-10 {
+  z-index: -10;
 }
 
 .mx-8 {
@@ -605,6 +613,18 @@ video {
   margin-bottom: 1.25rem;
 }
 
+.mt-6 {
+  margin-top: 1.5rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
+}
+
 .mb-12 {
   margin-bottom: 3rem;
 }
@@ -619,6 +639,10 @@ video {
 
 .mr-3 {
   margin-right: 0.75rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
 }
 
 .block {
@@ -677,6 +701,15 @@ video {
   transform-origin: bottom left;
 }
 
+.-translate-x-1\/2 {
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.transform {
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .flex-wrap {
   flex-wrap: wrap;
 }
@@ -701,6 +734,16 @@ video {
   align-self: center;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
 .rounded-lg {
   border-radius: 0.5rem;
 }
@@ -711,6 +754,10 @@ video {
 
 .rounded-\[24px\] {
   border-radius: 24px;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
 }
 
 .border {
@@ -800,16 +847,30 @@ video {
   padding-right: 2rem;
 }
 
+.py-8 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .pt-32 {
   padding-top: 8rem;
 }
 
-.pt-24 {
-  padding-top: 6rem;
+.pt-12 {
+  padding-top: 3rem;
 }
 
 .pb-12 {
   padding-bottom: 3rem;
+}
+
+.pt-24 {
+  padding-top: 6rem;
 }
 
 .pt-10 {
@@ -840,19 +901,24 @@ video {
   line-height: 2rem;
 }
 
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .font-bold {
@@ -867,6 +933,10 @@ video {
   font-weight: 600;
 }
 
+.font-normal {
+  font-weight: 400;
+}
+
 .leading-relaxed {
   line-height: 1.625;
 }
@@ -876,9 +946,9 @@ video {
   color: rgb(20 184 166 / var(--tw-text-opacity));
 }
 
-.text-dark {
+.text-black {
   --tw-text-opacity: 1;
-  color: rgb(0 35 102 / var(--tw-text-opacity));
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -886,9 +956,9 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-black {
+.text-dark {
   --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
+  color: rgb(0 35 102 / var(--tw-text-opacity));
 }
 
 .text-slate-300 {
@@ -909,6 +979,11 @@ video {
 .text-sky-500 {
   --tw-text-opacity: 1;
   color: rgb(14 165 233 / var(--tw-text-opacity));
+}
+
+.text-secondary {
+  --tw-text-opacity: 1;
+  color: rgb(100 116 139 / var(--tw-text-opacity));
 }
 
 .shadow-lg {
@@ -1012,6 +1087,12 @@ body {
   .md\:w-1\/3 {
     width: 33.333333%;
   }
+
+  .md\:scale-100 {
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
 }
 
 @media (min-width: 1024px) {
@@ -1043,6 +1124,10 @@ body {
     width: 50%;
   }
 
+  .lg\:w-1\/6 {
+    width: 16.666667%;
+  }
+
   .lg\:max-w-full {
     max-width: 100%;
   }
@@ -1070,14 +1155,15 @@ body {
     color: rgb(255 255 255 / var(--tw-text-opacity));
   }
 
-  .lg\:text-black {
-    --tw-text-opacity: 1;
-    color: rgb(0 0 0 / var(--tw-text-opacity));
-  }
-
   .lg\:shadow-none {
     --tw-shadow: 0 0 #0000;
     --tw-shadow-colored: 0 0 #0000;
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:w-1\/3 {
+    width: 33.333333%;
   }
 }
