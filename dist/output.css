@@ -981,8 +981,12 @@ video {
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Inter', sans-serif;
 }
+
+/* body {
+    font-family: 'Poppins', sans-serif;
+} */
 
 .navbar-fixed{
   position: fixed;
@@ -1018,10 +1022,6 @@ body {
 .hamburger-active > span:nth-child(3){
   --tw-rotate: -45deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.lg\:font-semibold{
-  font-weight: 600;
 }
 
 .hover\:border-primary:hover{
