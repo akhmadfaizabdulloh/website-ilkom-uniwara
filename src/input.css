@@ -5,13 +5,10 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-    font-family: 'Inter', sans-serif;
-}
 
-/* body {
+body {
     font-family: 'Poppins', sans-serif;
-} */
+}
 
 .navbar-fixed{
     @apply fixed z-[9999] bg-dark bg-opacity-70;
