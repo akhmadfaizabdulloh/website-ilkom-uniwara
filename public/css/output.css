@@ -595,11 +595,6 @@ video {
   margin-right: auto;
 }
 
-.my-4{
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
 .mt-1{
   margin-top: 0.25rem;
 }
@@ -656,8 +651,8 @@ video {
   margin-right: 0.75rem;
 }
 
-.mt-9{
-  margin-top: 2.25rem;
+.mb-9{
+  margin-bottom: 2.25rem;
 }
 
 .block{
@@ -706,10 +701,6 @@ video {
 
 .w-9{
   width: 2.25rem;
-}
-
-.w-1\/4{
-  width: 25%;
 }
 
 .max-w-\[250px\]{
@@ -865,11 +856,6 @@ video {
 .px-8{
   padding-left: 2rem;
   padding-right: 2rem;
-}
-
-.py-4{
-  padding-top: 1rem;
-  padding-bottom: 1rem;
 }
 
 .pt-32{
