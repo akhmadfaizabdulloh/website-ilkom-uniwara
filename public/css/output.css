@@ -795,13 +795,13 @@ video {
   list-style-type: decimal;
 }
 
-.columns-2{
-  -moz-columns: 2;
-       columns: 2;
+.columns-3{
+  -moz-columns: 3;
+       columns: 3;
 }
 
-.grid-cols-4{
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+.grid-cols-3{
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .grid-cols-6{
