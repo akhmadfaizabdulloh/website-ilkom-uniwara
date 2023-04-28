@@ -589,12 +589,16 @@ video {
   grid-column: span 2 / span 2;
 }
 
+.row-span-4{
+  grid-row: span 4 / span 4;
+}
+
 .row-span-2{
   grid-row: span 2 / span 2;
 }
 
-.row-span-4{
-  grid-row: span 4 / span 4;
+.row-span-3{
+  grid-row: span 3 / span 3;
 }
 
 .row-start-2{
@@ -603,6 +607,14 @@ video {
 
 .row-start-1{
   grid-row-start: 1;
+}
+
+.row-start-3{
+  grid-row-start: 3;
+}
+
+.row-end-3{
+  grid-row-end: 3;
 }
 
 .row-end-4{
@@ -815,25 +827,20 @@ video {
   list-style-type: decimal;
 }
 
-.columns-3{
-  -moz-columns: 3;
-       columns: 3;
-}
-
 .grid-flow-col{
   grid-auto-flow: column;
-}
-
-.grid-cols-6{
-  grid-template-columns: repeat(6, minmax(0, 1fr));
 }
 
 .grid-cols-3{
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
-.grid-rows-2{
-  grid-template-rows: repeat(2, minmax(0, 1fr));
+.grid-cols-6{
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
+.grid-rows-6{
+  grid-template-rows: repeat(6, minmax(0, 1fr));
 }
 
 .grid-rows-3{
@@ -844,8 +851,12 @@ video {
   grid-template-rows: repeat(4, minmax(0, 1fr));
 }
 
-.grid-rows-6{
-  grid-template-rows: repeat(6, minmax(0, 1fr));
+.grid-rows-2{
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+}
+
+.grid-rows-1{
+  grid-template-rows: repeat(1, minmax(0, 1fr));
 }
 
 .flex-row{
