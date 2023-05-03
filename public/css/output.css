@@ -581,6 +581,14 @@ video {
   z-index: 50;
 }
 
+.order-1{
+  order: 1;
+}
+
+.order-first{
+  order: -9999;
+}
+
 .col-span-4{
   grid-column: span 4 / span 4;
 }
@@ -1376,6 +1384,10 @@ body {
     right: 0px;
   }
 
+  .lg\:order-first{
+    order: -9999;
+  }
+
   .lg\:mt-9{
     margin-top: 2.25rem;
   }
@@ -1434,6 +1446,10 @@ body {
 
   .lg\:max-w-full{
     max-width: 100%;
+  }
+
+  .lg\:grid-cols-3{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .lg\:rounded-none{
