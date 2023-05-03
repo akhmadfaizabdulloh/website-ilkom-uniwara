@@ -581,12 +581,8 @@ video {
   z-index: 50;
 }
 
-.order-1{
-  order: 1;
-}
-
-.order-first{
-  order: -9999;
+.order-last{
+  order: 9999;
 }
 
 .col-span-4{
@@ -702,10 +698,6 @@ video {
 
 .mt-11{
   margin-top: 2.75rem;
-}
-
-.mb-20{
-  margin-bottom: 5rem;
 }
 
 .mb-6{
@@ -1450,6 +1442,14 @@ body {
 
   .lg\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .lg\:self-start{
+    align-self: flex-start;
+  }
+
+  .lg\:self-end{
+    align-self: flex-end;
   }
 
   .lg\:rounded-none{
