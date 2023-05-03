@@ -1245,6 +1245,11 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.drop-shadow-2xl{
+  --tw-drop-shadow: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
 .transition{
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -1412,6 +1417,10 @@ body {
     height: 100vh;
   }
 
+  .lg\:h-\[567px\]{
+    height: 567px;
+  }
+
   .lg\:h-\[450px\]{
     height: 450px;
   }
@@ -1430,6 +1439,10 @@ body {
 
   .lg\:w-\[1016px\]{
     width: 1016px;
+  }
+
+  .lg\:w-\[371px\]{
+    width: 371px;
   }
 
   .lg\:w-\[600px\]{
@@ -1454,6 +1467,19 @@ body {
 
   .lg\:bg-transparent{
     background-color: transparent;
+  }
+
+  .lg\:bg-contain{
+    background-size: contain;
+  }
+
+  .lg\:bg-center{
+    background-position: center;
+  }
+
+  .lg\:object-cover{
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 
   .lg\:px-44{
