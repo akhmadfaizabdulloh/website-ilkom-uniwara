@@ -708,14 +708,6 @@ video {
   margin-right: 1.5rem;
 }
 
-.mb-2\.5{
-  margin-bottom: 0.625rem;
-}
-
-.mb-7{
-  margin-bottom: 1.75rem;
-}
-
 .block{
   display: block;
 }
@@ -1512,8 +1504,20 @@ body {
     padding-top: 1rem;
   }
 
+  .lg\:pt-24{
+    padding-top: 6rem;
+  }
+
   .lg\:pt-64{
     padding-top: 16rem;
+  }
+
+  .lg\:pt-56{
+    padding-top: 14rem;
+  }
+
+  .lg\:pt-52{
+    padding-top: 13rem;
   }
 
   .lg\:text-4xl{
