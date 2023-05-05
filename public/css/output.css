@@ -1406,6 +1406,10 @@ body {
 }
 
 @media (min-width: 768px){
+  .md\:hidden{
+    display: none;
+  }
+
   .md\:w-1\/3{
     width: 33.333333%;
   }
