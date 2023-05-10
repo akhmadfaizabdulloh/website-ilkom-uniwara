@@ -1432,6 +1432,10 @@ body {
     order: -9999;
   }
 
+  .lg\:order-last{
+    order: 9999;
+  }
+
   .lg\:order-none{
     order: 0;
   }
